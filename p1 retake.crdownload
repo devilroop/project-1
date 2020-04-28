@@ -1,0 +1,470 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[41]:
+
+
+
+def pat (): 
+    for i in range(len(name)):
+        a=int(input("enter the letter row range="))
+        b=int(input("enter the letter col range="))
+        if name[i]=="A":
+            print_A=[[" " for i in range(a)] for j in range(b)]
+            for row in range(a):
+                for col in range (b):
+                    if (col<1 or col==b-1) and row!=0 or row==0 and col!=0 and col!=b-1 or row==int(a/2):
+                        print_A[row][col]= "*"
+            list2.append(print_A)
+            
+            
+        elif name[i]=="B":
+            print_B=[[" " for row in range(a)] for col in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if (col==0 or (col==b-1 and row!=0 and row!=int(a/2) and row!=a-1)) or ((row==0 and col!=b-1) or (row==int(a/2) and col<b-1) or (row==a-1 and col!=b-1)) :
+                        print_B[row][col]="*"
+            list2.append(print_B)
+        elif name [i]=="C":
+            print_C=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if col==0 and row!=0 and row!=a-1  or row==0 and col!=0 or row==a-1 and col!=0:
+                        print_C[row][col]="*"
+            list2.append(print_C)
+        elif name [i]=="D":
+            print_D=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(a):
+                    if col==0 or col==b-1 and row!=0  and row!=a-1 or row==0 and col!=b-1  or row==a-1 and col!=b-1 :
+                        print_D[row][col]="*"
+            list2.append(print_D)
+        elif name [i]=="E":
+            print_E=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if col==0 or row==0 or row==int(a/2) or row==a-1 :
+                        print_E[row][col]="*"
+            list2.append(print_E)
+        elif name [i]=="F":
+            print_F=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if col==0 or row==0 or row==int(a/2)  :
+                        print_F[row][col]="*"
+            list2.append(print_F)
+        elif name [i]=="G":
+            print_G=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if row==0 and col!=0 or col==0 and row<int(a/2)+1 and row!=0  and row!=int(a/2) or row==int(a/2) and col!=0 or row==int(a/2)-2 and col>int(b/2) or col==b-1 and row>int(a/2)-2:
+                        print_G[row][col]="*"
+            list2.append(print_G)
+        elif name [i]=="H":
+            print_H=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if col==0 or col==b-1 or row==int(a/2)  :
+                        print_H[row][col]="*"
+            list2.append(print_H)
+        elif name [i]=="J":
+            print_J=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if col==int(b/2) and row!=a-1 or row==0 or col==0 and row>int(a/2)-1 and row!=a-1 or row==a-1 and col!=0 and col!=b-1 and col<int(b/2):
+                        print_J[row][col]="*"
+            list2.append(print_J)
+        elif name [i]=="K":
+            print_K=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if col == 0 or row+col ==int(a/2) or row-col==int(a/2):
+                        print_K[row][col]="*"
+            list2.append(print_K)
+        elif name [i]=="I":
+            print_I=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if row==0 or row==a-1 or col==int(b/2)  :
+                            print_I[row][col]="*"
+            list2.append(print_I)
+        elif name [i]=="L":
+            print_L=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if col==0 or row==a-1   :
+                            print_L[row][col]="*"
+            list2.append(print_L)
+        elif name [i]=="M":
+            print_M=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if  row+col ==int(a/2) and row<int(a/2)-1 or row==col and row<int(a/2)-1 or col==0 or col==int(b/2):
+                        print_M[row][col]="*"
+            list2.append(print_M)
+        elif name [i]=="N":
+            print_N=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if row==col or col==0 or col==b-1:
+                        print_N[row][col]="*"
+            list2.append(print_N)
+        elif name [i]=="O":
+            print_O=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if (col==0 and row>0 and row<a-1) or (col==b-1 and row>0 and row<a-1) or (row==0 and col!=0 and col!=b-1) or (row==a-1 and col!=0 and col!=b-1) : 
+                        print_O[row][col]="*"
+            list2.append(print_O)
+        elif name [i]=="P":
+            print_P=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if col==0 and row!=0 or col==b-1 and row!=0 and row<int(a/2) or row==0 and col!=0 and col!=b-1 or row==int(a/2) and col!=b-1 :
+                        print_P[row][col]="*"
+            list2.append(print_P)
+        elif name [i]=="Q":
+            print_Q=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if (col==0 and row>0 and row<a-2) or (col==b-2 and row>0 and row<a-2) or (row==0 and col!=0 and col<b-2) or (row==a-2 and col!=0 and col!=b-2) : 
+                        print_Q[row][col]="*"
+            list2.append(print_Q)
+        elif name [i]=="R":
+            print_R=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if col==0 or col==b-1 and row!=0 and row!=int(a/2) or row==0 and col!=b-1 or row==int(a/2) and col<b-1 :
+                        print_R[row][col]="*"
+            list2.append(print_R)
+        elif name [i]=="S":
+            print_S=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if col==0 and  row!=0 and row<int(a/2) or col==b-1 and row!=a-1 and row>int(a/2) or row==0 and col!=0 and col!=b-1 or row==int(a/2) and col!=0 and col!=b-1 or row==a-1 and col!=0 and col!=b-1 :
+                        print_S[row][col]="*"
+            list2.append(print_S)
+        elif name [i]=="T":
+            print_T=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if col==int(b/2) or row==0  :
+                        print_T[row][col]="*"
+            list2.append(print_T)
+        elif name [i]=="U":
+            print_U=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if col == 0 and row!=a-1 or col == b-1 and row!=a-1 or row==a-1 and col!=0 and col!=b-1:
+                        print_U[row][col]="*"
+            list2.append(print_U)
+        elif name [i]=="W":
+            print_W=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if  row+col ==int(a/2)  and row>int(a/2)/2 or row==col and row<int(a/2)+1 and row>int(a/2)/2-1 or col==0 and row<int(a/2) or col==int(b/2) and row<int(a/2):
+                        print_W[row][col]="*"
+            list2.append(print_W)
+        elif name [i]=="X":
+            print_X=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if  row+col ==int(a/2) or row==col and row<int(a/2)+1:
+                        print_X[row][col]="*"
+            list2.append(print_X)
+        elif name [i]=="Y":
+            print_Y=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if row+col ==int(a/2) and row<int(a/2)-1 or row==col and row<int(a/2)-1 or col==int(b/2)/2 and row>int(a/2)-3:
+                        print_Y[row][col]="*"
+            list2.append(print_Y)
+        elif name [i]=="Z":
+            print_Z=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if row==0  and col<int(b/2) or row+col==int(b/2) or row==int(a/2) and col<int(b/2):
+                        print_Z[row][col]="*"
+            list2.append(print_Z)
+
+            
+        elif name [i]=="0":
+            print_0=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if (col==0 and row>0 and row<a-1) or (col==b-1 and row>0 and row<a-1) or (row==0 and col!=0 and col!=b-1) or (row==a-1 and col!=0 and col!=b-1) : 
+                        print_0[row][col]="*"
+            list2.append(print_0)
+        elif name [i]=="1":
+            print_1=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                     if col==int(b/2) or row==a-1 or row+col==int(a/2) and row/3  :
+                        print_1[row][col]="*"
+            list2.append(print_1)
+        elif name [i]=="2":
+            print_2=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                      if row==0 and col<int(b/2) or col==int(b/2) and row!=0 or row==a-1 and col>2:
+                        print_2[row][col]="*"
+            list2.append(print_2)
+        elif name [i]=="3":
+            print_3=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if col==b-1 and row!=0 and row!=a-1 or row==0 and col!=b-1 or row==a-1 and col!=b-1 or row==int(a/2) and col>int(b/2):
+                        print_3[row][col]="*"
+            list2.append(print_3)
+        elif name [i]=="4":
+            print_4=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                      if col==int(b/2)  or row+col==int(a/2) and row/3 or row==int(a/2)  :
+                        print_4[row][col]="*"
+            list2.append(print_4)
+        elif name [i]=="5":
+            print_5=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                      if col==0 and row<int(a/2) or row==0 and col<int(b/2) or row==int(a/2) and col<int(b/2) or  row==a-1 and col<int(b/2) or col==int(b/2) and row>int(a/2) and row!=a-1  :
+                        print_5[row][col]="*"
+            list2.append(print_5)
+        elif name [i]=="7":
+            print_7=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if col==b-1 or row==0 : 
+                        print_7[row][col]="*"
+            list2.append(print_7)
+        elif name [i]=="6":
+            print_6=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if col==0 and row!=0 and row!=a-1 or row==0 and col<b-3 and col!=0 or row==int(a/2) and col<b-3   or row==a-1 and col<b-3 and col!=0 or col==b-3 and row>int(b/2) and row!=a-1 and row!=0  :
+                        print_6[row][col]="*"
+            list2.append(print_6)
+        elif name [i]=="8":
+            print_8=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if (col==0 and row>0 and row<a-1) or (col==b-1 and row>0 and row<a-1) or (row==0 and col!=0 and col!=b-1) or (row==a-1 and col!=0 and col!=b-1 or row==int(a/2))   :   
+                        print_8[row][col]="*"
+            list2.append(print_8)
+        elif name [i]=="9":
+            print_9=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if col==b-1 and row!=0  or row==0 and col!=b-1 and col!=0 or col==0 and row<int(a/2) and row!=0 and row!=0 or row==int(a/2) and col!=0 and col!=b-1:
+                        print_9[row][col]="*"
+            list2.append(print_9)
+        elif name [i]=="a":
+            print_a=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if col == 0 and row!=a-2 and row!=a-1 and row!=0 or col == b-2 and row!=a-2 and row!=0 or row==a-2 and col!=0 and col!=a-1  or row==0 and col!=0 and col!=b-2 and col!=b-1 :
+                        print_a[row][col]="*"
+            list2.append(print_a)
+        elif name [i]=="b":
+            print_b=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if col==0 and row!=0 or row==int(a/2) and col!=b-1 or row==a-1 and col!=0 and col!=b-1 or col==b-1 and row!=int(a/2) and row!=a-1 and row>int(a/2):
+                        print_b[row][col]="*"
+            list2.append(print_b)
+        elif name [i]=="c":
+            print_c=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if col==0 and row!=0 and row!=a-1  or row==0 and col!=0 or row==a-1 and col!=0:
+                        print_c[row][col]="*"
+            list2.append(print_c)
+        elif name [i]=="d":
+            print_d=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if col==b-1  or row==int(a/2) and col!=0  or col==0 and row>int(a/2) and row<a-1 or row==a-1 and col!=0 and col!=b-1 :
+                        print_d[row][col]="*"
+            list2.append(print_d)
+        elif name [i]=="e":
+            print_e=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if col==0 and row!=0 and row!=a-1 or row==0 and col!=0 and col!=b-1 or row==a-1 and col!=0 or col==int(b/2) and row<int(a/2) or row==int(a/2) and col> int(b/2) and col!=b-1 or col==b-1 and row<int(a/2) and row!=0:
+                        print_e[row][col]="*"
+            list2.append(print_e)
+        elif name [i]=="f":
+            print_f=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if col==1 and row!=0  or row==0 and col!=0 and col!=1 or row==int(a/2) and col<int(b/2)  :
+                        print_f[row][col]="*"
+            list2.append(print_f)
+        elif name [i]=="g":
+            print_g=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if col==b-1 and row!=0 and row!=a-1 or row==0 and col!=0 and col!=b-1 or row==int(a/2) and col!=0 or col==0 and row<int(a/2) and row!=0 or row==a-1 and col!=0 and col!=b-1:
+                        print_g[row][col]="*"
+            list2.append(print_g)
+        elif name [i]=="h":
+            print_h=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if col==0 or row==int(a/2) and col!=b-1 and col!=1 or col==b-1 and row>int(a/2)  :
+                        print_h[row][col]="*"
+            list2.append(print_h)
+        elif name [i]=="i":
+            print_i=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if col==0 and row!=1  :
+                        print_i[row][col]="*"
+            list2.append(print_i)
+        elif name [i]=="j":
+            print_j=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if col==b-1 and row!=a-1 and row!=1  or row==a-1 and col!=b-1:
+                        print_j[row][col]="*"
+            list2.append(print_j)
+        elif name [i]=="k":
+            print_k=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if col == 0 or row+col ==int(a/2) or row-col==int(a/2):
+                        print_k[row][col]="*"
+            list2.append(print_k)
+        elif name [i]=="l":
+            print_l=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if col==int(b/2)   :
+                        print_l[row][col]="*"
+            list2.append(print_l)
+        elif name [i]=="m":
+            print_m=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if col==0 and row!=0 or col==int(b/2) and row!=0 and row<int(b/2) or col==b-1 and row!=0 or row==0 and col!=0 and col!=int(b/2) and col!=b-1:
+                        print_m[row][col]="*"
+            list2.append(print_m)
+        elif name [i]=="n":
+            print_n=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if col==0 and row!=0 or col==b-1 and row!=0 or row==0 and col!=0 and col!=b-1   :
+                        print_n[row][col]="*"
+            list2.append(print_n)
+        elif name [i]=="o":
+            print_o=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if (col==0 and row>0 and row<a-1) or (col==b-1 and row>0 and row<a-1) or (row==0 and col!=0 and col!=b-1) or (row==a-1 and col!=0 and col!=b-1) : 
+                        print_o[row][col]="*"
+            list2.append(print_o)
+        elif name [i]=="p":
+            print_p=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if col==0 and row!=0 or col==b-1 and row!=0 and row<int(a/2) or row==0 and col!=0 and col!=b-1 or row==int(a/2) and col!=b-1 :
+                        print_p[row][col]="*"
+            list2.append(print_p)
+        elif name [i]=="q":
+            print_q=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                     if col==0 and row!=0 and row<int(a/2) or col==b-1 and row!=0 or row==0 and col!=0 and col!=b-1 or row==4 and col!=0   :
+                        print_q[row][col]="*"
+            list2.append(print_q)
+        elif name [i]=="r":
+            print_r=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if col==0 or  row+col==int(a/2):
+                        print_r[row][col]="*"
+            list2.append(print_r)
+        elif name [i]=="s":
+            print_s=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if col==0 and  row!=0 and row<int(a/2) or col==b-1 and row!=a-1 and row>int(a/2) or row==0 and col!=0 and col!=b-1 or row==int(a/2) and col!=0 and col!=b-1 or row==a-1and col!=0 and col!=b-1 :
+                        print_s[row][col]="*"
+            list2.append(print_s)
+        elif name [i]=="t":
+            print_t=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                     if col==int(b/2) or row==2:
+                        print_t[row][col]="*"
+            list2.append(print_t)
+        elif name [i]=="u":
+            print_u=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if col == 0 and row!=a-2 and row!=a-1 or col == b-2 and row!=a-2 or row==a-2 and col!=0 and col!=a-1  :
+                        print_u[row][col]="*"
+            list2.append(print_u)
+        elif name [i]=="w":
+            print_w=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if col==0 and row!=a-1 or col==b-1 and row!=a-1 or row==a-1 and col!=0 and col!=b-1 and col!=int(b/2) or col==int(a/2) and row>int(a/2) and row!=a-1:
+                        print_w[row][col]="*"
+            list2.append(print_w)
+        elif name [i]=="x":
+            print_x=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if  row+col ==int(a/2) or row==col and row<int(a/2)+1:
+                        print_x[row][col]="*"
+            list2.append(print_x)
+        elif name [i]=="y":
+            print_y=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if col==b-1 or row==col and row<int(a/2)+2 :
+                        print_y[row][col]="*"
+            list2.append(print_y)
+        elif name [i]=="z":
+            print_z=[[" " for i in range(a)] for j in range(b)]
+            for row in range (a):
+                for col in range(b):
+                    if row==0  and col<int(b/2) or row+col==int(b/2) or row==int(a/2) and col<int(b/2):
+                        print_z[row][col]="*"
+            list2.append(print_z)
+        
+        else:
+            print("invalid")
+            
+    return list2
+
+name=input("enter the letter or name: ")
+list2=[]
+list3= pat ()
+#print(list3)
+a=int(input("enter row range="))
+b=int(input("enter col range="))
+
+for i in range(a):
+    for k in range(len(list3)):
+        for j in range(b):
+            print(list3[k][i][j],end=" ")
+        print(end=" ")
+    print()
+    
+    
+        
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
